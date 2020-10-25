@@ -1,50 +1,101 @@
+/*Adding font*/
 body{
-   font-family: 'Bangers', cursive;
-background-color: lightskyblue;
+font-family: 'Arvo', serif;
+background-color: #ded6b7;
 }
 
 h1{
     text-align: center;
-    background-color: lightskyblue;
+    background-color: #ded6b7;
+    font-size:2em;
     
 }
-
 .text{
-    z-index: 2;
-    background-color: lightskyblue;
+    background-color:#ded6b7;
+    font-size:0.85em;
    
 }
 
+/*Making a fixed width container to ensure margins are maintained*/
 .container{
     margin:0 auto;
-    max-width: 960px;
+    max-width:1070px;
     background:	#f9f9f9;
     font-size:24px;
-    background-color: lightskyblue;
-    /*padding:25px;*/
+    background-color: #ded6b7;
+   
 }
 
-
-section {
-  padding: 20px 150px;
-  background: #fff;
-  font-size: 1.5em;
-  line-height: 1.7em;
-  color: #210002;
-}
-
-
+/*Background attachment set to fixed to give the parallax scrolling effect*/
 .parallax {
-    min-height: 500px;
-    background-color: white;
-    padding:40px; 
-    /*background: transparent;*/
+
+  
+  /* Set a specific height */
+  min-height: 650px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+  background-color:#ded6b7;
+ 
+   
+
+
+
 }
 
-#dropandspeech{
-    height: 300px;
-    width:300px;
-    position:fixed;
-    padding-left:450px;
-    z-index:1;
+/*Placing each image as separate background images*/
+#dino{
+    background-image: url("dino.jpg");
+    background-size:contain;
+    padding:40px;
+    
 }
+
+
+#agriculture{
+    background-image: url("agr-10.jpg");
+    background-size:contain;
+    padding:40px;
+}
+
+#industrialization{
+    background-image: url("ind-12.jpg");
+     background-size:contain;
+     padding:40px;
+}
+
+#modern{
+    background-image: url("faucet-20.jpg");
+     background-size:contain;
+     padding:40px;
+}
+
+#drought{
+    background-image: url("drought-19.jpg");
+     background-size:contain;
+     padding:40px;
+}
+
+#save{
+    background-image: url("suggestion-24.jpg");
+     background-size:contain;
+/*     padding:40px;*/
+}
+
+/*Giving the drop a fixed position so that it stays constant on the screen while the elements scroll up*/
+#drop{
+    height: 350px;
+    width:350px;
+    position:fixed;
+    left:45%;
+    z-index:2; 
+    padding-top:153px;
+    background: transparent;
+    
+    
+    
+}
+

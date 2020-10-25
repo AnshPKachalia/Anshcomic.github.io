@@ -1,41 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Comic</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="parallax.min.js"></script> 
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-     <script src="comic.js"></script> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+ <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
 </head>
+<body onscroll=" updateScrollPosition() ">
     
-<body>
-    
-   <div class="container">
+<!-- Adding the water droplet   -->
+<div class="waterdrop"> <img src="p1d1.png" id="drop"></div>
+ <div class="container" id="contain">
     <h1>The Journey Of A Water Droplet</h1>
    
-   <div id="dino" class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="dino.jpg">
-       <img id="dropandspeech" src="drop%20and%20speech.png"></div>
-       
-     <div class="text">
-         <h2>The Mesozoic Era </h2>
-       <p>Mesozoic Era, second of Earth’s three major geologic eras of Phanerozoic time. Its name is derived from the Greek term for “middle life.” The Mesozoic Era began 252.2 million years ago, following the conclusion of the Paleozoic Era, and ended 66 million years ago, at the dawn of the Cenozoic Era. (See the geologic time scale.) The major divisions of the Mesozoic Era are, from oldest to youngest, the Triassic Period, the Jurassic Period, and the Cretaceous Period. The ancestors of major plant and animal groups that exist today first appeared during the Mesozoic, but this era is best known as the time of the dinosaurs.</p>
+<!--Adding images and accompanying text       -->
+   <div class="text" >
+         <h2>Dinosaur Age </h2>
+       <p>Water lies in oceans, rivers, lakes, ponds, underground, glaciers, the atmosphere, and living things. Water sustains all lives on Earth as all organisms need water to survive. The same water is essentially reused ever since as it is cycled through evaporation, condensation, and precipitation since the start of life. </p>
       </div> 
-    
-    
-     <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="industrial%20water%20highline.png"></div>
-       <div class="text">
-       <h2>The Industrial Era </h2>
-       <p>Mesozoic Era, second of Earth’s three major geologic eras of Phanerozoic time. Its name is derived from the Greek term for “middle life.” The Mesozoic Era began 252.2 million years ago, following the conclusion of the Paleozoic Era, and ended 66 million years ago, at the dawn of the Cenozoic Era. (See the geologic time scale.) The major divisions of the Mesozoic Era are, from oldest to youngest, the Triassic Period, the Jurassic Period, and the Cretaceous Period. The ancestors of major plant and animal groups that exist today first appeared during the Mesozoic, but this era is best known as the time of the dinosaurs.</p>
-       </div> 
+     
+     <div id="dino" class="parallax" >
+       </div>
        
-        <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="agr-10.jpg"></div>
-       <div class="text">
-       <h2>The Agricultural Era </h2>
-       <p>The Green Revolution, or the Third Agricultural Revolution, is the set of research technology transfer initiatives occurring between 1950 and the late 1960s, that increased agricultural production worldwide, beginning most markedly in the late 1960s.The initiatives resulted in the adoption of new technologies, including High-Yielding Varieties (HYVs) of cereals, especially dwarf wheat and rice. It was associated with chemical fertilizers, agrochemicals, and controlled water-supply (usually involving irrigation) and newer methods of cultivation, including mechanization. All of these together were seen as a 'package of practices' to supersede 'traditional' technology and to be adopted as a whole.</p>
+     
+     <div class="text">
+       <h2>Early Farming Age </h2>
+       <p>The use of water in agriculture enabled the formation of civilizations with the constant supply of food. This allowed the human population to grow as well as further development in technology.</p>
+    
+      <div class="parallax" id="agriculture"></div>
+      
+           
+    
+         <div class="text" >
+       <h2>Industrial Use of Water </h2>
+       <p>Since the dawn of industrialization, water has proved essential for the working of factories and machinery. Both as a resource to run and cool machines and as a pit to soak all the industrial waste. This has affected the health of water by adding contaminants, affecting its pH and harming marine life. Freshwater that had various household uses has reduced in quantity due to industrial pollution.</p>
        </div> 
+         <div class="parallax" id="industrialization"></div>
+      
+       
+       
+       </div> 
+     
+      <div class="text">
+       <h2>Modern Daily Use of Water </h2>
+       <p>Water has become an essential element in modern life (apart from the obvious need of its consumption to survive). It provides us with electricity and is important for cooking, cleaning, and bathing. Apart from that it has also seen its importance in leisurely activities taking place in swimming pools or even water parks. </p>
+       </div>  
+     <div class="parallax" id="modern"></div>
+      
+     
+     <div class="text">
+       <h2>Drought and Waste of Water </h2>
+       <p>“An estimated 55 million people globally are affected by droughts every year. Water scarcity impacts 40% of the world’s population, and as many as 700 million people are at-risk of being displaced as a result of drought by 2030”(World Health Organization). Yet, the average family can waste “180 gallons per week, or 9,400 gallons of water annually, from household leaks”(United States Environmental Protection Agency).</p>
+       </div>  
+     <div class="parallax" id="drought"></div>
+       
+     
+     <div class="text">
+       <h2>Suggestions For Better Use of Water</h2>
+       <p>For households, we can all use at least 20 percent less water by installing water-efficient fixtures and appliances. For example, we can use showerheads instead of bathtubs, install low-flow aerators on faucets, and use energy star rated dishwashers and washing machines. For industries, we can remove water from cleaning processes when a dry alternative is possible, reuse non-potable water for other operations, and replace outdated equipment with energy-efficient alternatives...</p>
+       </div> 
+     <div class="parallax" id="save"></div>
+       
+     <div> <h3> There are many ways to save the water as long as you want to. Let’s save the water together.</h3></div>
     </div>
-</body>    
 
+
+</body>
+     <script src="script.js"></script> 
 </html>
