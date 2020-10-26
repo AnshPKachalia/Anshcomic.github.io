@@ -7,29 +7,31 @@ var paragraph = document.getElementById('drop');
   if (y<100){
       paragraph.src='blank.png';
   }
-    else if ( y>= 100 && y< 500 ) {
+    else if ( y>= 100 && y< 120 ) {
     paragraph.src='p1d1.png';
-  } else if ( y >= 500 && y < 920 ) {
+  } else if ( y>= 120 && y< 500 ) {
+    paragraph.src='water-04.png';
+  }else if ( y >= 500 && y < 920 ) {
    paragraph.src='blank.png';
     }else if ( y >= 920 && y < 1421 ) {
-    paragraph.src='p2d1.png';
+    paragraph.src='panel%202-29.png';
     }else if ( y >= 1421 && y < 1824 ) {
     paragraph.src='blank.png';
   } else if ( y >= 1824 && y < 2334 ) {
-    paragraph.src = "p3d1.png";
+    paragraph.src = "panel%203-16.png";
   } else if ( y >= 2334 && y < 2735 ) {
     paragraph.src = "blank.png";
   } else if ( y >= 2735 && y < 3244 ) {
-    paragraph.src = "p4d1.png";
+    paragraph.src = "panel%204-17.png";
   } else if ( y >= 3244 && y < 3674 ) {
     paragraph.src = "blank.png";
   } else if ( y >= 3674 && y < 4194 ) {
-    paragraph.src = "p5d1.png";
+    paragraph.src = "panel%205-38.png";
   } else if ( y >= 4194 && y < 4648 ) {
     paragraph.src = "blank.png";
   }
  else{
-     paragraph.src = "p6d1.png";
+     paragraph.src = "panel%206-43.png";
  }
 }
 
@@ -149,9 +151,14 @@ else if (droplet.src.match('p1d4.png')){
     droplet.src='p1d5.png';
 }
 else if (droplet.src.match('p1d5.png')){
-    droplet.src='p1d1.png';
+    droplet.src='water-04.png';
 }
-
+else if (droplet.src.match('water-04.png')){
+    droplet.src='p1d2.png';
+}
+else if (droplet.src.match('panel%202-29.png')){
+   droplet.src="p2d1.png";
+}
 else if (droplet.src.match('p2d1.png')){
    droplet.src="p2d2.png";
 }
@@ -160,8 +167,11 @@ else if (droplet.src.match('p2d2.png')){
 }
 
 else if (droplet.src.match('p2d3.png')){
-    droplet.src='p2d1.png';
-}   
+    droplet.src='panel%202-29.png';
+}  
+else if (droplet.src.match('panel%203-16.png')){
+    droplet.src='p3d1.png';
+}    
 else if (droplet.src.match('p3d1.png')){
     droplet.src='p3d2.png';
 }
@@ -169,14 +179,20 @@ else if (droplet.src.match('p3d2.png')){
     droplet.src='p3d3.png';
 }
 else if (droplet.src.match('p3d3.png')){
-    droplet.src='p3d1.png';
+    droplet.src='panel%203-16.png';
+}
+else if (droplet.src.match('panel%204-17.png')){
+    droplet.src='p4d1.png';
 }
 else if (droplet.src.match('p4d1.png')){
     droplet.src='p4d2.png';
 }
 
 else if (droplet.src.match('p4d2.png')){
-    droplet.src='p4d1.png';
+    droplet.src='panel%204-17.png';
+}
+else if (droplet.src.match('panel%205-38.png')){
+    droplet.src='p5d1.png';
 }
 else if (droplet.src.match('p5d1.png')){
     droplet.src='p5d2.png';
@@ -185,9 +201,12 @@ else if (droplet.src.match('p5d2.png')){
     droplet.src='p5d3.png';
 }
 else if (droplet.src.match('p5d3.png')){
-    droplet.src='p5d1.png';
+    droplet.src='panel%205-38.png';
 }
+else if (droplet.src.match('panel%206-43.png')){
+    droplet.src='p6d1.png';
+}    
 else{
-    droplet.src='p6d1.png'
+    droplet.src='panel%206-43.png'
 }
 }
