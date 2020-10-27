@@ -189,6 +189,9 @@ else if (droplet.src.match('p4d1.png')){
 }
 
 else if (droplet.src.match('p4d2.png')){
+    droplet.src='p4d3.png';
+}
+else if (droplet.src.match('p4d3.png')){
     droplet.src='panel%204-17.png';
 }
 else if (droplet.src.match('panel%205-38.png')){
